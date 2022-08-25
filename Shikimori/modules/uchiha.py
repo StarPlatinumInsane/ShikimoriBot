@@ -34,7 +34,7 @@ PHOTO = "https://telegra.ph/file/43d9fb78973ec724c41e5.jpg"
 network_name = NETWORK_USERNAME.lower()
 
 if network_name == "Anteiku_cafe_fed":
-    def anteiku(update: Update, context: CallbackContext):
+    def uchiha(update: Update, context: CallbackContext):
 
         TEXT = f"""
 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ [ΛПƬΣ𝐈𝐊Ц Federations](https://t.me/Anteiku_cafe_fed/47),
@@ -62,11 +62,11 @@ if network_name == "Anteiku_cafe_fed":
         )
 
 
-    anteiku_handler = CommandHandler(("anteiku", "federation", "net"), anteiku, run_async = True)
-    dispatcher.add_handler(anteiku_handler)
+    uchiha_handler = CommandHandler(("anteiku", "federation", "net"), anteiku, run_async = True)
+    dispatcher.add_handler(uchiha_handler)
 
     __help__ = """
-    ──「ΛПƬΣ𝐈𝐊Ц Federations」──                         
+    ΛПƬΣ𝐈𝐊Ц Federations                         
     
     ❂ /anteiku : Get information about our community! Using it in groups may create promotion so we don't support using it in groups."""
     
