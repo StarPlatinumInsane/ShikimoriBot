@@ -62,7 +62,7 @@ if network_name == "Anteiku_cafe_fed":
         )
 
 
-    uchiha_handler = CommandHandler(("anteiku", "federation", "net"), anteiku, run_async = True)
+    uchiha_handler = CommandHandler(("uchiha", "natwork", "net"), uchiha, run_async = True)
     dispatcher.add_handler(uchiha_handler)
 
     __help__ = """
