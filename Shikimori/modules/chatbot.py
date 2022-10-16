@@ -1,4 +1,4 @@
-# Credits to MetaVoid Team for making this module.
+
 
 import json
 import re
@@ -142,7 +142,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        kukiurl = requests.get('https://itsprodev.cf/chatbot/SOME1HING.php?api=' + api + '&message=' + Message)
+        kukiurl = requests.get('https://devman.kuki.ai' + api + '&message=' + Message)
         Kuki = json.loads(kukiurl.text)
         kuki = Kuki['reply']
         sleep(0.3)
@@ -193,5 +193,4 @@ __help__ = """
 *Admins only Commands*:
   ➢ `/Chatbot`*:* Shows chatbot control panel
 
-*Thx @mizuhara_chan1 for the API*
 """
